@@ -1,0 +1,56 @@
+{% extends "Python.html" %}
+{% block content %}
+<div class="row">
+    <div class="column side" style="background-color:#aaa;">
+       {% include 'examplelist.html' %}
+  </div>
+  <div class="column middle" style="background-color:#bbb;">
+             <h2 style="text-align:center; color: Navy;">Python Program Examples to Print Hello world!</h2>
+     <p style="font-family: 'Courier New'; font-size: 18px;">
+            A simple program that displays “Hello, World!”.we have used the built-in print() function to print the string Hello, world! on the screen.
+     </p>
+      <div class="wrapper">
+          <div class="hidelogo"></div>
+          <div class="hidelogo1"></div>
+          <iframe height="400px" width="100%" src="https://repl.it/@gantasagar/hello?lite=true" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+      </div>
+      <p style="font-family: 'Courier New'; font-size: 18px;">
+            In the below “Hello, World!” Example we have used "a" variable to store the Hello World! and built-in print() function to print the variable "a" on the screen.
+     </p>
+      <div class="wrapper">
+          <div class="hidelogo"></div>
+          <div class="hidelogo1"></div>
+          <iframe height="400px" width="100%" src="https://repl.it/@gantasagar/Helloworld1?lite=true" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+      </div>
+      <p style="font-family: 'Courier New'; font-size: 18px;">
+            The below “Hello, World!” Example we have used "a" variable to get Hello World! from the user and built-in print() function to print the variable "a" on the screen.
+     </p>
+          <div class="wrapper">
+              <div class="hidelogo"></div>
+              <div class="hidelogo1"></div>
+              <iframe height="400px" width="100%" src="https://repl.it/@gantasagar/Hello2?lite=true" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+          </div>
+      <p style="font-family: 'Courier New'; font-size: 18px;">
+            The below “Hello, World!” Example will give output with out any Exceptions.
+     </p>
+      <div class="wrapper">
+          <div class="hidelogo"></div>
+          <div class="hidelogo1"></div>
+          <iframe height="400px" width="100%" src="https://repl.it/@gantasagar/hello3?lite=true" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+      </div>
+     <h4 class="div2">
+         <table style="width:100%;">
+             <tr>
+                 <td>
+                     <a href="{% url 'Python:h1' %}" class="w3-bar-item" >previous</a>
+                 </td>
+                 <td> </td>
+                 <td style="text-align: right;">
+                     <a href="{% url 'Python:sum' %}" class="w3-bar-item" >Next</a>
+                 </td>
+             </tr>
+         </table>
+     </h4>
+  </div>
+</div>
+{% endblock %}
